@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light | on | off</title>
+
+    <style>
+        body {
+            background-color: chocolate;
+            margin: 5%;
+            padding: 2%;
+        }
+
+        button {
+            height: 1cm;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Light on off code!</h1>
+
+    <img id="light" src="images/plug.png" alt="Light" width="20%" height="20%">
+
+    <br><br>
+
+    <button onclick="lightOnOff(0)" id="b1">On</button>
+    <button onclick="lightOnOff(1)" id="b1">Off</button>
+    <button onclick="lightOnOff(2)">reset</button>
+
+    <script>
+        function lightOnOff(val) {
+            let picture;
+            // let myval = document.getElementById("b1").value;
+            console.log(val);
+
+            if (val === 0) {
+                pic = "images/images.png";
+            } else if (val === 2) {
+                pic = "images/plug.png"
+            }
+            else {
+                pic = "images/download.png";
+            }
+
+            document.getElementById("light").src = picture;
+
+        }
+    </script>
+
+</body>
+
+</html>
